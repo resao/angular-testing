@@ -15,6 +15,7 @@ import { UsersComponent } from './users/users.component';
 //import { NavComponent } from './nav/nav.component';
 import { HighlightDirective } from './highlight.directive';
 import { TestComponentComponent } from './test-component/test-component.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TestComponentComponent } from './test-component/test-component.componen
     UsersComponent,
     //NavComponent,
     HighlightDirective,
-    TestComponentComponent
+    TestComponentComponent,
+    NavComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
