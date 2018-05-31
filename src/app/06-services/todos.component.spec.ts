@@ -43,9 +43,7 @@ describe('TodosComponent', () => {
 
   it('should add the new todo returned from the server', () => {
     const todo = { id: 1 };
-    const spy = spyOn(service, 'add').and.callFake(t => {
-      return Observable.from([todo]);
-    });
+    const spy = spyOn(service, 'add').and.returnValue(Observable.from([todo]));
 
     component.add();
 
